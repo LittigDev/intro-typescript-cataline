@@ -23,6 +23,6 @@ function howToUseVoid(): void {
 howToUseVoid();
 
 //Tipo never -> Utilizado para tratar funções de looping infinito e exceções (Raramente utilizado);
-function useNeverType(): never {
-    'retua'
+function error(): never {
+    throw new Error('Mariana error');
 }
