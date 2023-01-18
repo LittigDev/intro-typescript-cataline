@@ -26,3 +26,19 @@ howToUseVoid();
 function error(): never {
     throw new Error('Mariana error');
 }
+
+// Tipo Array -> Precisa especificar conteúdo da array;
+let items: Array<number>;
+items = [1,2,3]
+
+// Tipo tuple -> Array em que já se tem o conhecimento de seu comprimento;
+let itemsTuple: [number, string, boolean];
+itemsTuple = [1, 'Cataline', false];
+
+// Tipo Enum -> Cria-se um conjunto de chave e valor
+enum Colors {
+    white = '#fff',
+    black = '#000'
+};
+let color: Colors = Colors.white;
+console.log(color);
