@@ -54,7 +54,7 @@ function showPet(pet: 'dog' | 'cat' | 'zebra')  {
 
 showPet('zebra');
 
-// Tipe Aliases -> Apelido de tipos
+// Type Aliases -> Apelido de tipos
 type Pet = 'dog' | 'cat' | 'zebra';
 
 function displayPet(pet: Pet)  {
@@ -62,3 +62,11 @@ function displayPet(pet: Pet)  {
 };
 
 displayPet('zebra');
+
+// Type Inference -> o valor atribuido a varável, também pode identificar seu tipo;
+
+let messager = 'Cataline';
+
+window.addEventListener('click', (event) => {
+    console.log(event.target);
+});
