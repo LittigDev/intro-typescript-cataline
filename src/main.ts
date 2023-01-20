@@ -42,3 +42,14 @@ enum Colors {
 };
 let color: Colors = Colors.white;
 console.log(color);
+
+// Tipo Union -> União de tipos
+let age: number | string;
+age = 20;
+age = 'vinte';
+
+function showPet(pet: 'dog' | 'cat' | 'zebra')  {
+    console.log(pet)
+};
+
+showPet('zebra');
