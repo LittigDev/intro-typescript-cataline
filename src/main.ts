@@ -53,3 +53,12 @@ function showPet(pet: 'dog' | 'cat' | 'zebra')  {
 };
 
 showPet('zebra');
+
+// Tipe Aliases -> Apelido de tipos
+type Pet = 'dog' | 'cat' | 'zebra';
+
+function displayPet(pet: Pet)  {
+    console.log(pet);
+};
+
+displayPet('zebra');
